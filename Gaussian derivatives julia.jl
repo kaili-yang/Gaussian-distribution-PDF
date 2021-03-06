@@ -18,5 +18,5 @@ d0 = normalDensity.(xGrid)
 d1 = derivative.(normalDensity,xGrid)
 d2 = second_derivative.(normalDensity, xGrid)
 
-plot(xGrid, [d0 d1 d2], c=[:blue :red :green],label=[L"f(x)" L"f’(x)" L"f’’(x)"])
+plot(xGrid, [d0 d1 d2], c=[:blue :red :green],label=["f(x)" "f’(x)" "f’’(x)"])
 plot!([-5,5],[0,0], color=:black, lw=0.5, xlabel="x", xlims=(-5,5), label="")
